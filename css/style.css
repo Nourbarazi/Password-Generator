@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #ccc;
+    padding: 80px 0;
+}
+
+main form {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 4px;
+    color:#505e6c;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+main form h3 {
+    text-align:center
+}
+
+main form div .form-control {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color: #f7f9fc;
+    height: 40px;
+    padding: 0 10px;
+    color: inherit;
+    box-shadow: none;
+    margin-top: 20px
+}
+
+main form div .btn-primary {
+    width:100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: #f4476b;
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+main form div .btn-primary:last-child {
+    background-color: #6610f2
+}
+
+main form div .btn-primary:hover,
+main form div .btn-primary:active {
+    background-color: #eb3b60
+}
+
+main form div .btn-primary:active {
+    transform: translateY(1px)
+}
+
+main #toast {
+    text-align:center;
+    background-color: #000;
+    color: #fff;
+    border-radius: 2px;
+    min-width: 250px;
+    position: fixed;
+    padding: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom:50%;
+    visibility: hidden
+}
+
+main #toast.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout .5s 2.5s
+}
+
+@keyframes fadein {
+    from{
+        opacity: 0;
+        bottom: 0;
+    }
+    to {
+        opacity: 1;
+        bottom: 50%;
+    }
+}
+
+@keyframes fadeout {
+    from{
+        opacity: 1;
+        bottom: 50%;
+    }
+    to {
+        opacity: 0;
+        bottom: 0;
+    }
+}  

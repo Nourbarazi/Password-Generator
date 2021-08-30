@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <main>
+        <form method="post">
+            <h3>Password Generator</h3>
+            <div>
+                <input type="text" id="pass" placeholder="Password" class="form-control">
+            </div>
+            
+            <div>
+                <button class=" btn-primary copy" type="button" onclick="copy()">
+                <i class="fa fa-copy "></i>&nbsp; Copy</button>
+                <button class="btn-primary gen" type="button" onclick="passGen()">Generate Password</button>
+            </div>
+        </form>
+        <div id="toast">Password Copied!!</div>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
